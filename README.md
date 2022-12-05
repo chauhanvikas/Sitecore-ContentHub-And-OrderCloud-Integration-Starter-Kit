@@ -40,7 +40,9 @@ The Product Sync API is a.NET Core Web API that contains all the logic necessary
  - **Content Hub Trigger** : Refer to this link to configure the Trigger
  https://doc.sitecore.com/xp/en/developers/100/sitecore-experience-commerce/walkthrough--configuring-the-sitecore-content-hub-to-sitecore-commerce-connector.html
  
- - **Web API Project Setup** :  Please set the below sttings to connect the Conetent hub and Order cloud in appsettings.json file.
+ - **Web API Project Setup** :  Please set the below settings to connect the Conetent hub and Order cloud in appsettings.json file.
  ![image](https://user-images.githubusercontent.com/10286938/205563833-63db7ffc-6acc-45f8-9db9-ca385f8ac08f.png)
 
- 
+ - ** Product fields Mapping** : Maps Content Hub products fields to target fields of Order Cloud fields in appsettings.json file which needs to be synced.
+ ![image](https://user-images.githubusercontent.com/10286938/205587712-edaf7260-e4bc-4a34-8315-39fc19018401.png)
+
