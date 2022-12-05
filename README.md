@@ -27,7 +27,7 @@ https://docs.stylelabs.com/contenthub/4.2.x/content/integrations/integration-com
 
 # Azure Function 
 Azure Functions are a subset of Azure Service Bus Triggers, and its primary function is to listen for queue events and activate 
-the Product Synchronization API to sync products. **"Contenthub.Entity.Processing"** project is implemented for Azure function. Setup the ** connectionstring** in **local.setting.json** file of Azure function project.
+the Product Synchronization API to sync products. **"Contenthub.Entity.Processing"** project is implemented for Azure function. Setup the ** connectionstring** in **local.setting.json** file and **URI" property with the Web API end point in function1 class line no #73  of Azure function project.
 Please refer to this link for deployment of Azure function  https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies
 # Web API : 
 The Product Sync API is a.NET Core Web API that contains all the logic necessary to extract product entity data from the Content Hub and sync it with the Order cloud. This API connects the system and all necessary operations between the Content Hub and Order cloud SDK.
@@ -43,6 +43,6 @@ The Product Sync API is a.NET Core Web API that contains all the logic necessary
  - **Web API Project Setup** :  Please set the below settings to connect the Conetent hub and Order cloud in **appsettings.json file**.
  ![image](https://user-images.githubusercontent.com/10286938/205563833-63db7ffc-6acc-45f8-9db9-ca385f8ac08f.png)
 
- - ** Product fields Mapping** : Maps Content Hub products fields to target fields of Order Cloud fields in **appsettings.json** file which needs to be synced.
+ - **Product fields Mapping** : Maps Content Hub products fields to target fields of Order Cloud fields in **appsettings.json** file which needs to be synced.
  ![image](https://user-images.githubusercontent.com/10286938/205587712-edaf7260-e4bc-4a34-8315-39fc19018401.png)
 
